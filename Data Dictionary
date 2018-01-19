@@ -1,1 +1,21 @@
 
+Data collected from the (up to) 200 listed trending YouTube videos every day in the United States, United Kingdom, Canada, Germany and France. Not much data at the moment but it will be updated every few days with new information, just like the old dataset.
+
+The headers in each file are:
+
+- video_id
+- trending_date (The date the video was collected on, format: YY.MM.DD)
+- title
+- channel_title
+- category_id (Can be looked up using the included JSON files, but varies per region so use the appropriate JSON file for the CSV file's country)
+- publish_time (The time at which the video was published on YouTube)
+- tags (Separated by | character, [none] is displayed if there are no tags)
+- views
+- likes
+- dislikes
+- comment_count
+- thumbnail_link
+- comments_disabled
+- ratings_disabled
+- video_error_or_removed (If this is true, it means that the video was removed by the user, or some unspecified error occurred during collection)
+- description
